@@ -1,0 +1,78 @@
+.app {
+  width: 100%;
+  height: auto;
+
+  .wrapper {
+    width: 100%;
+    height: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem 0rem;
+
+    .container-banner {
+      position: relative;
+      width: 100%;
+      height: auto;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        max-width: 90%;
+        border-radius: 1rem;
+      }
+
+      .container-info {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1rem;
+
+        .container-title {
+          width: 100%;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          gap: 1rem;
+
+          h2 {
+            font-size: clamp(
+              2rem,
+              4vw,
+              4rem
+            ); /* Ajusta los valores según tus necesidades */
+            text-align: center;
+            color: white;
+            text-shadow: 1px 1px 5px #000;
+          }
+
+          p {
+            font-size: clamp(
+              0.8rem,
+              2vw,
+              1rem
+            ); /* Ajusta los valores según tus necesidades */
+            max-width: 50%;
+            text-align: center;
+            color: rgb(189, 189, 189);
+            text-shadow: 1px 1px 5px #000;
+          }
+        }
+
+        button {
+          padding: 1rem 2rem;
+          border-radius: 1rem;
+        }
+      }
+    }
+  }
+}
